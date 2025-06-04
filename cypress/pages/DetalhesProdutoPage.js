@@ -1,10 +1,10 @@
 class DetalhesProdutoPage {
   getTitle() {
-    return cy.get('.inventory_details_name');
+    return cy.get(".inventory_details_name");
   }
 
   getPrice() {
-    return cy.get('.inventory_details_price');
+    return cy.get(".inventory_details_price");
   }
 
   addToCar() {
@@ -12,7 +12,7 @@ class DetalhesProdutoPage {
   }
 
   goToCar() {
-    cy.get('.shopping_cart_link').click();
+    cy.get(".shopping_cart_link").click();
   }
 }
 export default new DetalhesProdutoPage();
