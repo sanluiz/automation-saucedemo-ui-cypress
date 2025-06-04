@@ -11,3 +11,4 @@ Automatizar o fluxo de compra no site [https://www.saucedemo.com] utilizando Cyp
 git clone https://github.com/seu-usuario/cypress-saucedemo-poc.git
 cd automation-saucedemo-ui-cypress
 npm install cypress -D
+npx cypress open
