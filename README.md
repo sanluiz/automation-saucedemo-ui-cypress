@@ -1,19 +1,59 @@
-# automation-saucedemo-ui
 
-# POC - Cypress + POM - Automação de Testes SauceDemo
+POC - Automação de Testes com Cypress 
 
-## 🎯 Objetivo
+---
 
-Automatizar o fluxo de compra no site [https://www.saucedemo.com] utilizando Cypress com JavaScript e a arquitetura Page Object Model (POM).
+🎯 Objetivo
 
-## 🚀 Setup do Projeto
+Automatizar o fluxo de compra no site https://www.saucedemo.com utilizando Cypress com JavaScript e arquitetura Page Object Model (POM).
 
-```bash
-git clone https://github.com/seu-usuario/cypress-saucedemo-poc.git
+---
+
+🚀 Setup do Projeto
+
+1. Clone o repositório:
+
+git clone https://github.com/sanluiz/automation-saucedemo-ui-cypress
+
+2. Entre na pasta do projeto:
+
 cd automation-saucedemo-ui-cypress
-npm install cypress -D
-<<<<<<< HEAD
+
+3. Instale as dependências:
+
+npm install
+
+4. Abra o Cypress (modo UI):
+
 npx cypress open
-=======
-```
->>>>>>> bb8dc46 (Adição dos scripts lint, lint:fix e format para facilitar a execução das ferramentas)
+
+---
+
+⚡ Scripts Úteis
+
+- Executar todos os testes no modo headless (linha de comando):
+
+npm test
+
+- Rodar ESLint para verificar o código:
+
+npm run lint
+
+- Rodar ESLint e corrigir automaticamente o que for possível:
+
+npm run lint:fix
+
+- Rodar Prettier para formatar os arquivos automaticamente:
+
+npm run format
+
+---
+
+🗂 Estrutura do Projeto
+
+- cypress/e2e/ - testes organizados por fluxo/página
+- cypress/pages/ - objetos de página (Page Object Model)
+- cypress/support/ - comandos customizados e suporte geral
+- eslint.config.js - configuração do ESLint
+- package.json - gerenciamento de dependências e scripts
+- prettier.config.js ou .prettierrc - configuração do Prettier
