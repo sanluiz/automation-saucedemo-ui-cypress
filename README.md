@@ -1,15 +1,14 @@
-
-POC - Automação de Testes com Cypress 
+POC - Automação de Testes com Cypress
 
 ---
 
-🎯 Objetivo
+# Objetivo
 
 Automatizar o fluxo de compra no site https://www.saucedemo.com utilizando Cypress com JavaScript e arquitetura Page Object Model (POM).
 
 ---
 
-🚀 Setup do Projeto
+# Setup do Projeto
 
 1. Clone o repositório:
 
@@ -23,17 +22,21 @@ cd automation-saucedemo-ui-cypress
 
 npm install
 
-4. Abra o Cypress (modo UI):
+---
 
-npx cypress open
+# Como Rodar os Testes
+
+- Abrir a interface do Cypress
+
+npm run cypress
+
+- Ou rodar em modo headless
+
+npm test
 
 ---
 
-⚡ Scripts Úteis
-
-- Executar todos os testes no modo headless (linha de comando):
-
-npm test
+# Scripts Úteis
 
 - Rodar ESLint para verificar o código:
 
@@ -49,7 +52,7 @@ npm run format
 
 ---
 
-🗂 Estrutura do Projeto
+# Estrutura do Projeto
 
 - cypress/e2e/ - testes organizados por fluxo/página
 - cypress/pages/ - objetos de página (Page Object Model)

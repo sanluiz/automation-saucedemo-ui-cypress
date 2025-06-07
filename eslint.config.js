@@ -1,40 +1,40 @@
 /* eslint-env node */
-const js = require("@eslint/js");
+const js = require('@eslint/js');
 
 module.exports = [
+  {
+    ignores: ['node_modules', 'cypress/reports'],
+  },
   js.configs.recommended,
   {
-    files: ["**/*.js"],
+    files: ['**/*.js'],
     languageOptions: {
       ecmaVersion: 2021,
-      sourceType: "module",
+      sourceType: 'module',
       globals: {
-        Cypress: "readonly",
-        cy: "readonly",
-        describe: "readonly",
-        it: "readonly",
-        beforeEach: "readonly",
-        expect: "readonly",
+        Cypress: 'readonly',
+        cy: 'readonly',
+        describe: 'readonly',
+        it: 'readonly',
+        beforeEach: 'readonly',
+        expect: 'readonly',
       },
     },
     rules: {
-      semi: ["error", "always"],
-      quotes: ["error", "single"],
+      semi: ['error', 'always'],
+      quotes: ['error', 'single'],
     },
   },
   {
-    files: ["cypress.config.js", "eslint.config.js"],
+    files: ['cypress.config.js', 'eslint.config.js'],
     languageOptions: {
       globals: {
-        require: "readonly",
-        module: "readonly",
-        __dirname: "readonly",
-        process: "readonly",
+        require: 'readonly',
+        module: 'readonly',
+        __dirname: 'readonly',
+        process: 'readonly',
       },
-      sourceType: "script",
-    },
-    rules: {
-      // regras específicas, se quiser
+      sourceType: 'script',
     },
   },
 ];
