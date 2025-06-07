@@ -21,7 +21,7 @@ class CheckoutPage {
         cy.get('[data-test="finish"]').should('be.visible').click();
       } else {
         throw new Error(
-          'Não é possível finalizar o pedido: usuário não está na etapa 2 do checkout',
+          'Não é possível finalizar o pedido: usuário não está na etapa 2 do checkout'
         );
       }
     });

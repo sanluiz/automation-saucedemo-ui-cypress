@@ -34,7 +34,7 @@ describe('Fluxo completo de compra na SauceDemo', () => {
     // Validação final
     CheckoutCompletePage.getSuccessMessage().should(
       'contain.text',
-      'Thank you for your order!',
+      'Thank you for your order!'
     );
   });
 
@@ -45,7 +45,7 @@ describe('Fluxo completo de compra na SauceDemo', () => {
       .should('be.visible')
       .and(
         'contain.text',
-        'Epic sadface: Username and password do not match any user in this service',
+        'Epic sadface: Username and password do not match any user in this service'
       );
   });
 

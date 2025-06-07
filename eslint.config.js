@@ -3,7 +3,7 @@ const js = require('@eslint/js');
 
 module.exports = [
   {
-    ignores: ['node_modules', 'cypress/reports'],
+    ignores: ['node_modules', 'cypress/reports']
   },
   js.configs.recommended,
   {
@@ -17,13 +17,13 @@ module.exports = [
         describe: 'readonly',
         it: 'readonly',
         beforeEach: 'readonly',
-        expect: 'readonly',
-      },
+        expect: 'readonly'
+      }
     },
     rules: {
       semi: ['error', 'always'],
-      quotes: ['error', 'single'],
-    },
+      quotes: ['error', 'single']
+    }
   },
   {
     files: ['cypress.config.js', 'eslint.config.js'],
@@ -32,9 +32,9 @@ module.exports = [
         require: 'readonly',
         module: 'readonly',
         __dirname: 'readonly',
-        process: 'readonly',
+        process: 'readonly'
       },
-      sourceType: 'script',
-    },
-  },
+      sourceType: 'script'
+    }
+  }
 ];
